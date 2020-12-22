@@ -2,6 +2,12 @@
 
 NodeJS bindings for Logitech's [Illumination SDK](https://www.logitechg.com/en-us/innovation/developer-lab.html)
 
+## Installation
+
+```bash
+npm i logitech-led
+```
+
 ## Example Usage
 
 ```js
@@ -12,13 +18,6 @@ if (success) {
     logitechLED.LogiLedSetLighting(0, 100, 0);
 }
 ```
-
-interface LogitechLed {
-    LogiLedInit: () => boolean;
-    LogiLedSaveCurrentLighting: () => boolean;
-    LogiLedRestoreCurrentLighting: () => boolean;
-    LogiLedSetLighting: (red: number, green: number, blue: number) => boolean;
-}
 
 ## API
 
