@@ -1,6 +1,6 @@
 # Logitech-Led
 
-NodeJS bindings for Logitech's Illumination SDK
+NodeJS bindings for Logitech's [Illumination SDK](https://www.logitechg.com/en-us/innovation/developer-lab.html)
 
 ## Example Usage
 
