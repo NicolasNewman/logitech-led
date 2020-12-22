@@ -32,4 +32,4 @@ interface LogitechLed {
 
 ### LogiLedSetLighting(red, green, blue)
 
-* red, green, blue: **integers** within the range [0,100]
+* *red*, *green*, *blue*: **integers** within the range [0,100]
