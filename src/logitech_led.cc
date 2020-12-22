@@ -31,7 +31,7 @@ Napi::Boolean W_LogiLedSetLighting(const Napi::CallbackInfo& info) {
   Napi::Env env = info.Env();
 
   if (info.Length() != 3) {
-    Napi::TypeError::New(env, "Invalid number of arguments passed. Expected 3");
+    Napi::TypeError::New(env, "Invalid number of arguments passed. Expected 3").ThrowAsJavaScriptException();
     return Napi::Boolean::New(env, false);
   }
 
@@ -44,7 +44,7 @@ Napi::Boolean W_LogiLedSetLighting(const Napi::CallbackInfo& info) {
   int bluePercentage = info[1].As<Napi::Number>().Int32Value();
   int greenPercentage = info[2].As<Napi::Number>().Int32Value();
   if(!inRange(redPercentage, 0, 100) || !inRange(bluePercentage, 0, 100) || !inRange(redPercentage, 0, 100)) {
-    Napi::TypeError::New(env, "Invalid range. Percentages must be integers 0 <= x <= 100").ThrowAsJavaScriptException();
+    Napi::TypeError::New(env, "Invalid range. Arguments must be integers within 0 <= x <= 100").ThrowAsJavaScriptException();
     return Napi::Boolean::New(env, false);
   }
 
