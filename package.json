@@ -9,10 +9,23 @@
     },
     "gypfile": true,
     "name": "logitech-led",
-    "version": "1.0.0",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NicolasNewman/logitech-led.git"
+    },
+    "keywords": [
+        "logitech",
+        "gaming",
+        "keyboard",
+        "mouse",
+        "LED",
+        "Logitech Gaming Software",
+        "illumination"
+      ],
     "description": "Bindings for Logitech's LED Illumination SDK",
     "author": "Nicolas Newman",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@types/node": "^7.0.22",
         "typescript": "^4.1.3"
