@@ -4,7 +4,12 @@
     "files": [
         "src/**/*",
         "LED/**/*",
-        "dist/**/*"
+        "dist/**/*",
+        "binding.gyp",
+        "LICENSE",
+        "package.json",
+        "package-lock.json",
+        "README.md"
     ],
     "dependencies": {
         "node-addon-api": "^1.1.0"
