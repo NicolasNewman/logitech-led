@@ -1,6 +1,6 @@
 {
     "main": "dist/binding.js",
-    "types": "dist/bindings.d.ts",
+    "types": "dist/binding.d.ts",
     "files": [
         "src/**/*",
         "LED/**/*",
